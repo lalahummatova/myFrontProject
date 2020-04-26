@@ -1,5 +1,5 @@
 
- #navigation{
+#navigation{
     
 
     .navbar{
@@ -35,26 +35,31 @@
     
      }
  }
-
- #intro{
+#intro{
      margin-top: -80px;
     position: relative;
-    padding: 250px 0;
+    // padding: 150px 0;
     background: url(../img/hero1.jpg);
+    background-repeat: no-repeat;
     z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
     &::after {
         content: "";
         width: 100%;
         height: 100%;
         top: 0;
+        right: 0;
         left: 0;
         position: absolute;
         background-color: #0707077d;
+        background-repeat: no-repeat;
         z-index: -1;
       }
     
 
     .intro-logo{
+        padding-top: 200px;
         margin-left: 155px;
         img{
             max-height: 8.125em;
@@ -62,6 +67,7 @@
         }
     }
     .intro-text{
+        padding-top: 200px;
         p{
             font-weight: 400;
           z-index: 10;
@@ -73,6 +79,171 @@
           opacity: .9;
         }
     }
+    .my-btn{
+        text-align: center;
+        width: 24%;
+        color: $text-color-white;
+       @extend %btn-shared;
+    }
+
+    .myicons{  
+        padding: 60px 0; 
+        margin-top: 100px;        
+        .social{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            li{
+             margin: 30px;
+             a{
+                 text-decoration: none;
+                 color: #a59f9f;
+                 &:hover{
+                     color: $text-color-white;
+                 }
+                 i{
+                     font-size: 25px;
+                 }
+                }
+            }
+        }
+    }
  }
+
+ #delivered{
+     padding: 100px 0;
+    background-color: #f4f4f4;
+    h3{
+        @include title;
+    }
+    p{
+        @include myp;
+    }
+    .digital-list{
+        ul{justify-content: center;
+            list-style-type: none;
+            display: flex;
+          
+            li{
+                font-style: italic;
+                 margin: 15px;
+                 text-transform: capitalize;
+                 color:$helper-color;
+                 text-align: center;
+                 &::after{
+                    content: '/';
+                    margin-left: 0.8125em;
+                    // opacity: 0.1;
+                 }
+            }
+        }
+    }
+    .filterDiv{
+        display: none;
+    } 
+    .show {
+        display: block;
+      } 
+      .btn {
+        cursor: pointer;
+      }
+      .btn.active {
+      color: grey;
+      }
+    .box{
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+      
+  
+        .overlay{
+       
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5); /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity:0;
+            color: white;
+            font-size: 20px;
+            padding: 160px;
+            text-align: top;
+              
+        }
+
+        &:hover .overlay{
+            opacity: 1;
+        }
+    }
+
+ }
+
+ #collective {
+     background-color: #f4f4f4;
+     padding: 100px 0;
+   h3{
+       @include title;
+   }
+   p{
+       @include myp;
+   }
+   .person{
+    position: relative;
+
+
+       .overlay{
+           top: 0;
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 94%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+       height: 100%;
+            h5{
+                color: $text-color-white;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 35%;
+            }
+            h6{
+                color: $helper-color;
+                position: absolute;
+                top: 45%;
+                left: 40%;
+                text-align: center;
+            }
+       }
+       .social{opacity: 0;
+           list-style-type: none;
+           display: flex;
+           position: absolute;
+           justify-content: center;
+           bottom: 10%;
+          left: 20%;
+          font-size: 20px;
+          i{
+            color: $text-color-white;
+
+          }
+       }
+
+       &:hover .overlay{
+            opacity: 1;
+       }
+       &:hover .social{
+        opacity: 1;
+   }
+   }
+ }
+   
+ 
         
     

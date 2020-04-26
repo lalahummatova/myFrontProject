@@ -3,3 +3,19 @@
     -ms-transition: $property;
     transition: $property;
 }
+
+@mixin title {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    color: #343434;
+    font-weight: 600;
+    font-variant-ligatures: common-ligatures;
+    font-size: 2em;
+    text-align: center;
+}
+ 
+@mixin myp{
+    font-size: 1.4375em;
+    line-height: 1.69565217em;
+    font-weight: 400;
+    color: $helper-color;
+}

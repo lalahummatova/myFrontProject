@@ -18,8 +18,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg"> 
-                            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" style="max-height: 40px;"></a>
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""
+                                    style="max-height: 40px;"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -46,10 +47,10 @@
                                 </ul>
                                 <form class="form-inline my-2 my-lg-0">
                                     <a href="" class="mr-5">
-                                    <i class="fas fa-search"></i>
+                                        <i class="fas fa-search"></i>
                                     </a>
                                     <a href="">
-                                        <i class="fas fa-shopping-bag" ></i>
+                                        <i class="fas fa-shopping-bag"></i>
                                     </a>
                                 </form>
                             </div>
@@ -61,33 +62,292 @@
         </section>
     </header>
     <main>
-          <section id="intro">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-6">
-                            <div class="intro-logo">
-                                <img src="img/logo.png" alt="">
-                            </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="intro-text mr-5">
-                              <p>A beautiful collection of
+        <!-- intro section start -->
+        <section id="intro">
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="intro-logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="intro-text mr-5">
+                            <p>A beautiful collection<br> of
                                 hand-crafted web components</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-lg-12">
-                          
-                      </div>
-                  </div>
-              </div>
-          </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="my-btn text-center mt-5">
+                            <span class="my-btn-text"> ► &nbsp; Watch The Overview</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="myicons">
+                            <ul class="social">
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-vimeo-v"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- intro section end -->
+
+        <!-- delivered section start  -->
+        <section id="delivered">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <h3 class="title">Digital, Delivered.</h3>
+                        <p class="text-center mt-5">Pillar is a team of passionate designers, developers and artists<br>
+                            working in print and digital.</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="digital-list">
+                            <ul id="myBtnContainer">
+                                <li class="btn active" onclick="filterSelection('all')">
+                                    Show All
+                                </li>
+                                <li class="btn" onclick="filterSelection('branding')">
+                                    Branding
+                                </li>
+                                <li class="btn" onclick="filterSelection('digital')">
+                                    Digital
+                                </li>
+                                <li class="btn" onclick="filterSelection('packaging')">
+                                    Packaging
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 box digital filterDiv">
+                        <img src="img/work1.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                            <h5>Freehance</h5>
+                            <span>
+                                <em>
+                                    iOS Application
+                                </em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 box branding filterDiv">
+                        <img src="img/work2.jpg" alt="" srcset="" class="img-fluid">
+                        <div class="overlay">
+                            <h5>
+                                Michael Andrews
+                            </h5>
+                            <span>
+                                <em>
+                                    Branding & Identity
+                                </em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 box branding filterDiv">
+                        <img src="img/work3.jpg" alt="" srcset="" class="img-fluid">
+                        <div class="overlay">
+                            <h5>
+                                Pillar Stationary
+                            </h5>
+                            <span>
+                                <em>
+                                    Branding Collateral
+                                </em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 box packaging filterDiv">
+                        <img src="img/work4.jpg" alt="" srcset="" class="img-fluid">
+                        <div class="overlay">
+                            <h5>
+                                Authentic Apparel
+                            </h5>
+                            <span>
+                                <em>
+                                    Packaging Design
+                                </em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 box branding filterDiv">
+                        <img src="img/work5.jpg" alt="" srcset="" class="img-fluid">
+                        <div class="overlay">
+                            <h5>
+                                Wave Poster
+                            </h5>
+                            <span>
+                                <em>
+                                    Logo Design
+                                </em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 box digital filterDiv">
+                        <img src="img/work6.jpg" alt="" srcset="" class="img-fluid">
+                        <div class="overlay">
+                            <h5>
+                                Tesla Controller
+                            </h5>
+                            <span>
+                                <em>
+                                    Apple Watch Application
+                                </em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- delivered section end -->
+
+
+        <!-- collective section start  -->
+        <section id="collective">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="title">
+                            Your Creative Collective
+                        </h3>
+                        <p class="myp text-center mt-3">Our diverse team comprises talent from a range of design
+                            disciplines<br> working together to deliver effective solutions</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-lg-4 person">
+                        <img src="img/avatar-team-5.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                            <h6>DESIGNER</h6>
+                            <h5>Isabelle Pearce</h5>
+
+                        </div>
+                        <ul class="social">
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-vimeo-v"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li class="mr-5">
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 person">
+                        <img src="img/avatar-team-4.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                            <h6>DEVELOPER</h6>
+                            <h5>Sarah Inkerman</h5>
+                        </div>
+                        <ul class="social intro-text">
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-vimeo-v"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li class="mr-5">
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 person">
+                        <img src="img/avatar-team-6.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                            <h6>DESIGNER</h6>
+                            <h5>Marcus Smith</h5>
+                        </div>
+                        <ul class="social">
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-vimeo-v"></i>
+                                </a>
+                            </li>
+                            <li class="mr-5">
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li class="mr-5">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- collective section end  -->
+
+
     </main>
     <footer>
 
     </footer>
-
 
 
 
