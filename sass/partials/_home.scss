@@ -1,0 +1,78 @@
+
+ #navigation{
+    
+
+    .navbar{
+        top: 0px;
+        padding: 15px 0;
+        @include transition(all 0.4s);
+        z-index: 1020;
+        .navbar-brand{
+         img{
+             max-height: 40px;
+            }
+        }
+        .navbar-nav {
+             text-transform: uppercase;
+             li{
+                a{
+                 font-family: $font-f;
+                      font-size: 14px;
+                      font-size: 10px;
+                      font-weight: 400;
+                      color: $text-color-white;
+                 }
+             }
+        }
+        .form-inline{
+            a{
+                i{
+                
+                    color: $text-color-white;
+                }
+            }
+        }
+    
+     }
+ }
+
+ #intro{
+     margin-top: -80px;
+    position: relative;
+    padding: 250px 0;
+    background: url(../img/hero1.jpg);
+    z-index: 0;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #0707077d;
+        z-index: -1;
+      }
+    
+
+    .intro-logo{
+        margin-left: 155px;
+        img{
+            max-height: 8.125em;
+            z-index: 10;
+        }
+    }
+    .intro-text{
+        p{
+            font-weight: 400;
+          z-index: 10;
+          color: $text-color-white;
+          position: relative;
+          top: 48px;
+          font-size: 1.4375em;
+          line-height: 1.69565217em;
+          opacity: .9;
+        }
+    }
+ }
+        
+    
