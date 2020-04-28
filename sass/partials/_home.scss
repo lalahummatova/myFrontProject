@@ -295,7 +295,93 @@
     }
  }
 
+ #expertise{
+     padding: 100px 0;
+     .title {
+         font-family: $font-f;
+       @include title;
+       font-size: 2em;
+         font-weight: 900;
+     }
+     .myp {
+        @include myp;
+        font-size: 2em;
+
+     }
+     .left-content {
+          img{
+              height: 50px;
+          }
+     }
+     .right-content{
+            h6{
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                color: #343434;
+                font-family: $font-f;
+            }
+            p{
+         @include myp;
+         font-size: 1em;
+            }
+     }
+ }
+
+ #gibson{
+   position: relative;
+     padding: 110px 0;
+     background-color: #f4f4f4;
+     .dan{
+          img{
+              bottom: -57%;
+           position: absolute;
+          }
+     }
+     .dantext{
+         p{
+              @include myp;
+         }
+    
+         h6{
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: #343434;
+            font-family: $font-f;
+         }
+    }
+ }
+     #news{ 
+     background-color: #f4f4f4;
+
+    padding: 100px 0;
+    h3{
+      @include title;
+    }
+    p{
+   @include myp;
+    }
+    .card-text{
+        color: #232323;
+        font-weight: 400;
+    }
+    h6{
+        text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    }
+    .h6{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400; 
+    }
+    .card{
+        &:hover{
+            box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.05);;
+        }
+    }
+}
    
  
         
-    

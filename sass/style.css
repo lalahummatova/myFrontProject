@@ -361,4 +361,119 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+#expertise {
+  padding: 100px 0;
+}
+
+#expertise .title {
+  font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  color: #343434;
+  font-weight: 600;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  font-size: 2em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#expertise .myp {
+  font-size: 1.4375em;
+  line-height: 1.69565217em;
+  font-weight: 400;
+  color: #767676;
+  font-size: 2em;
+}
+
+#expertise .left-content img {
+  height: 50px;
+}
+
+#expertise .right-content h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #343434;
+  font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+}
+
+#expertise .right-content p {
+  font-size: 1.4375em;
+  line-height: 1.69565217em;
+  font-weight: 400;
+  color: #767676;
+  font-size: 1em;
+}
+
+#gibson {
+  position: relative;
+  padding: 110px 0;
+  background-color: #f4f4f4;
+}
+
+#gibson .dan img {
+  bottom: -57%;
+  position: absolute;
+}
+
+#gibson .dantext p {
+  font-size: 1.4375em;
+  line-height: 1.69565217em;
+  font-weight: 400;
+  color: #767676;
+}
+
+#gibson .dantext h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #343434;
+  font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+}
+
+#news {
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+
+#news h3 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  color: #343434;
+  font-weight: 600;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  font-size: 2em;
+  text-align: center;
+}
+
+#news p {
+  font-size: 1.4375em;
+  line-height: 1.69565217em;
+  font-weight: 400;
+  color: #767676;
+}
+
+#news .card-text {
+  color: #232323;
+  font-weight: 400;
+}
+
+#news h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#news .h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#news .card:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
 /*# sourceMappingURL=style.css.map */
