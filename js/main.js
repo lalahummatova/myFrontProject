@@ -45,3 +45,53 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+$(document).ready(function(){
+   //brand slider
+   if($(".brands .item").length){
+    $('#brand-slider').owlCarousel({
+        loop:true,
+        margin:20,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsiveClass:true,
+        nav: false, 
+        dots: false,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:7,
+                nav:false
+            },
+            1000:{
+                items:7,
+            }
+        }
+    })
+   }
+
+
+
+
+})
+
+
+
+$(document).ready(function () {
+// smooth scroll effect 
+
+
+$(".top-link").click(function (e) { 
+  e.preventDefault();
+console.log("klik");
+      $("html,body").animate({scrollTop:"0"},1000);  
+     return false;
+
+});
+
+});
+

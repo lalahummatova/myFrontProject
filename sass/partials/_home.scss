@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 #navigation{
     
 
@@ -352,6 +354,7 @@
          }
     }
  }
+
      #news{ 
      background-color: #f4f4f4;
 
@@ -381,7 +384,168 @@
             box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.05);;
         }
     }
+    .my-btn {
+        button{
+            @extend %btn-shared;
+            background-color: transparent;
+            border-color:rgba(35, 35, 35, 0.1);
+            margin-top: 3.25em;
+          
+            
+            &:hover{
+                background-color: transparent;
+                border-color: rgba(35, 35, 35, 0.9);
+            }
+        }
+ 
+    }
 }
    
- 
-        
+#karusel{
+padding: 100px 0;
+background: #f4f4f4;
+   
+    .brands{
+        margin-top: 50px;
+        .item{
+            .brand-box{
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                img{
+                    padding: 20px;
+                    filter: brightness(100%) invert(1);
+                    max-height: 1.625em;
+                  
+                    max-height: 1.625em;
+                }
+            }
+        }
+    }
+}
+#interested{
+    padding: 70px 0;
+    background-color: #425cbb;
+    h5{
+        font-size: 1.4375em;
+           @include title;
+           color: $text-color-white;
+    }
+    .my-btn{
+        @extend %btn-shared;
+        border-color: rgba(255, 255, 255, 0.1);
+        color: #f4f4f4;
+        &:hover{
+            border-color: #f4f4f4;
+        }
+
+    }
+}
+
+
+    #big{
+        padding: 100px 0;
+        background-color: #232323;
+        color: white;
+        img{
+       max-width: 100%;
+       max-height: 2.03125em;
+       margin-bottom: 1.21875em;
+        }
+        h6{
+       font-family: $font-f;
+     
+       line-height: 2.6em;
+        }
+        p{
+   font-size: 1em;
+   line-height: 1.625em;
+   font-weight: 400;
+   font-family: $font-f;
+   opacity: 0.9;
+        }
+        a {text-decoration: underline;
+            color: white;
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: none;
+            color: #767676;
+            display: block;
+            margin: 0;
+            padding: 0;
+            li{
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 400;
+font-size: 0.725em;
+line-height: 2.6em;
+&:hover {
+    color: white;
+}
+            }
+
+        }
+        form{
+            button{
+                height: 52px;
+                font-size: 0.625em !important;
+                letter-spacing: 1px;
+                color: #fff;
+                background: #425cbb;
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                transition: 0.1s linear;
+                -webkit-transition: 0.1s linear;
+                -moz-transition: 0.1s linear;
+                border-radius: 100px;
+              padding: 5.41667px 32.5px 6.5px;
+                // border: 1px solid #232323;
+                font-size: inherit;
+                line-height: 1.625em;
+                text-transform: uppercase;
+                border-radius: 0 50px 50px 0;
+                margin-left: -4px;
+                margin-top:-4px;
+            }
+           input{
+              border-radius: 50px 0 0 50px;
+              width: 66.66666667%;
+              padding: 13px 26px;
+              border: 0;
+           }
+    
+             
+          
+        }
+    }
+
+    #small{ 
+        position: relative;
+        background: #1e1e1e;
+        padding:  1.625em 0;
+        p{
+            color: gray
+        }
+        .smooth{
+           
+            .top-link{
+               
+                width: 3.25em;
+                height: 3.25em;
+                border-radius: 50%;
+                background: #3d3d3d;
+                display: inline-block;
+                text-align: center;
+                position: fixed;
+                z-index: 4;
+                bottom: 3.25em;
+                padding-top: 12px;
+                color: white;
+                bottom: 55px;
+                right: 25px
+              
+            }
+        }
+     
+    }
+      

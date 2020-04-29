@@ -1,24 +1,31 @@
-#intro .my-btn {
+#intro .my-btn, #news .my-btn button, #interested .my-btn {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
   border-radius: 100px;
-  padding-top: 0.64166667em;
-  padding-bottom: 0.75em;
+  padding-top: 0.54166667em;
+  padding-bottom: 0.65em;
   padding-right: 3.25em;
   padding-left: 3.25em;
-  border: 1px solid #425cbb;
+  border: 1px solid #232323;
   border-width: 2px;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.625em;
   text-transform: uppercase;
-  background-color: #425cbb;
-  text-decoration: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-#intro .my-btn:hover {
+#intro .my-btn:hover, #news .my-btn button:hover, #interested .my-btn:hover {
   background-color: #546cc3;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #navigation .navbar {
@@ -475,5 +482,169 @@
 #news .card:hover {
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+#news .my-btn button {
+  background-color: transparent;
+  border-color: rgba(35, 35, 35, 0.1);
+  margin-top: 3.25em;
+}
+
+#news .my-btn button:hover {
+  background-color: transparent;
+  border-color: rgba(35, 35, 35, 0.9);
+}
+
+#karusel {
+  padding: 100px 0;
+  background: #f4f4f4;
+}
+
+#karusel .brands {
+  margin-top: 50px;
+}
+
+#karusel .brands .item .brand-box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+#karusel .brands .item .brand-box img {
+  padding: 20px;
+  -webkit-filter: brightness(100%) invert(1);
+          filter: brightness(100%) invert(1);
+  max-height: 1.625em;
+  max-height: 1.625em;
+}
+
+#interested {
+  padding: 70px 0;
+  background-color: #425cbb;
+}
+
+#interested h5 {
+  font-size: 1.4375em;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  color: #343434;
+  font-weight: 600;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+}
+
+#interested .my-btn {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f4f4f4;
+}
+
+#interested .my-btn:hover {
+  border-color: #f4f4f4;
+}
+
+#big {
+  padding: 100px 0;
+  background-color: #232323;
+  color: white;
+}
+
+#big img {
+  max-width: 100%;
+  max-height: 2.03125em;
+  margin-bottom: 1.21875em;
+}
+
+#big h6 {
+  font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+  line-height: 2.6em;
+}
+
+#big p {
+  font-size: 1em;
+  line-height: 1.625em;
+  font-weight: 400;
+  font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+  opacity: 0.9;
+}
+
+#big a {
+  text-decoration: underline;
+  color: white;
+  font-size: 20px;
+}
+
+#big ul {
+  list-style-type: none;
+  color: #767676;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#big ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.725em;
+  line-height: 2.6em;
+}
+
+#big ul li:hover {
+  color: white;
+}
+
+#big form button {
+  height: 52px;
+  font-size: 0.625em !important;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #425cbb;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  transition: 0.1s linear;
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  border-radius: 100px;
+  padding: 5.41667px 32.5px 6.5px;
+  font-size: inherit;
+  line-height: 1.625em;
+  text-transform: uppercase;
+  border-radius: 0 50px 50px 0;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+#big form input {
+  border-radius: 50px 0 0 50px;
+  width: 66.66666667%;
+  padding: 13px 26px;
+  border: 0;
+}
+
+#small {
+  position: relative;
+  background: #1e1e1e;
+  padding: 1.625em 0;
+}
+
+#small p {
+  color: gray;
+}
+
+#small .smooth .top-link {
+  width: 3.25em;
+  height: 3.25em;
+  border-radius: 50%;
+  background: #3d3d3d;
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  bottom: 3.25em;
+  padding-top: 12px;
+  color: white;
+  bottom: 55px;
+  right: 25px;
 }
 /*# sourceMappingURL=style.css.map */

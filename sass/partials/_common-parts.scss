@@ -1,16 +1,19 @@
 %btn-shared {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
     border-radius: 100px;
-    padding-top: 0.64166667em;
-    padding-bottom: 0.75em;
+    padding-top: 0.54166667em;
+    padding-bottom: 0.65em;
     padding-right: 3.25em;
     padding-left: 3.25em;
-    border: 1px solid $secondary-color;
+    border: 1px solid #232323;
     border-width: 2px;
-    font-size: 14px;
+    font-size: inherit;
     line-height: 1.625em;
     text-transform: uppercase;
-    background-color: $secondary-color;
-    text-decoration: none;
+      
     @include transition(all 0.5s);
 
     &:hover{
