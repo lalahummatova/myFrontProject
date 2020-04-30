@@ -1,3 +1,5 @@
+
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -80,9 +82,9 @@ $(document).ready(function(){
 })
 
 
-
-$(document).ready(function () {
 // smooth scroll effect 
+$(document).ready(function () {
+
 
 
 $(".top-link").click(function (e) { 
@@ -92,6 +94,15 @@ console.log("klik");
      return false;
 
 });
+// smooth scroll effect 
+
+
+
+// navbar scroll effect 
+
+
+// navbar scroll effect 
+
 
 });
 

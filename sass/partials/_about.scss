@@ -1,0 +1,279 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#about-navigation{
+  
+    
+
+        .navbar{
+            top: 0px;
+            padding: 15px 0;
+            @include transition(all 0.4s);
+            z-index: 1020;
+            .navbar-brand{
+             img{
+                 max-height: 40px;
+                }
+            }
+            .navbar-nav {
+                 text-transform: uppercase;
+                 li{
+                    a{
+                     font-family: $font-f;
+                          font-size: 14px;
+                          font-size: 10px;
+                          font-weight: 400;
+                          color: $text-color-white;
+                     }
+                 }
+            }
+            .form-inline{
+                a{
+                    i{
+                    
+                        color: $text-color-white;
+                    }
+                }
+            }
+        
+         }
+         .scrolled{
+            top: 0;
+            @include transition(all 0.4s);
+            background-color: red;
+        }
+     
+   
+}
+#about-intro{
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/about-bg/hero5.jpg);
+background-size: cover;
+
+
+    &::before{
+        position: absolute;
+    content: '';
+    background: #232323;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.7;
+    }
+    
+
+        .about-title{
+            position: relative;
+            z-index: 3;
+            h3{
+           @include title;
+           color: white;
+                
+             
+         
+            }
+            p{
+                  @include myp;
+                  color: white;
+                  font-size: 25px;
+            }
+        }
+    
+}
+
+#cards{
+   
+    padding: 100px 0;
+    background-color: #F4F4F4;
+    .cards{
+
+        .mycard{
+            &::before{
+                content: " ";
+                display: table;
+            }
+            .card-logo{
+                background: #eeeaea;
+    padding: 4.875em 0;
+    text-align: center;
+             img{
+                 height: 50px;
+             }
+            }
+            .card-text{
+                position: relative;
+    overflow: hidden;
+    padding: 2.4375em;  
+    background: #fff;
+    
+            }
+        }
+    }
+
+
+}
+#biznes{
+    position: relative;
+    z-index: 1;
+    padding-top: 100px 0;
+    // margin-top: 0;
+.biznes-text{
+    position: relative;
+    z-index: 3;
+    h4{
+        
+        color: white;
+    }
+    a{
+        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+        transition: 0.1s linear;
+        -webkit-transition: 0.1s linear;
+        -moz-transition: 0.1s linear;
+        border-radius: 100px;
+        padding-top: 0.54166667em;
+        padding-bottom: 0.65em;
+        padding-right: 3.25em;
+        padding-left: 3.25em;
+        // border: 1px solid #232323;
+        border-width: 2px;
+        font-size: inherit;
+        line-height: 1.625em;
+        text-transform: uppercase;
+    }
+}
+
+    background-attachment: fixed;
+    transform: translate3d(0px, 95.72px, 0px);
+    padding: 100px 0;
+    background-position: 50% 50% !important;
+    background-image: url(../img/about-bg/hero8.jpg);
+    background-size: cover;
+&::before{
+    position: absolute;
+    content: '';
+    background: #232323;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.3;
+}
+    
+        
+       
+
+}
+
+#big{
+    padding: 100px 0;
+    background-color: #232323;
+    color: white;
+    img{
+   max-width: 100%;
+   max-height: 2.03125em;
+   margin-bottom: 1.21875em;
+    }
+    h6{
+   font-family: $font-f;
+ 
+   line-height: 2.6em;
+    }
+    p{
+font-size: 1em;
+line-height: 1.625em;
+font-weight: 400;
+font-family: $font-f;
+opacity: 0.9;
+    }
+    a {text-decoration: underline;
+        color: white;
+        font-size: 20px;
+    }
+    ul{
+        list-style-type: none;
+        color: #767676;
+        display: block;
+        margin: 0;
+        padding: 0;
+        li{
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 400;
+font-size: 0.725em;
+line-height: 2.6em;
+&:hover {
+color: white;
+}
+        }
+
+    }
+    form{
+        button{
+            height: 52px;
+            font-size: 0.625em !important;
+            letter-spacing: 1px;
+            color: #fff;
+            background: #425cbb;
+            font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+            transition: 0.1s linear;
+            -webkit-transition: 0.1s linear;
+            -moz-transition: 0.1s linear;
+            border-radius: 100px;
+          padding: 5.41667px 32.5px 6.5px;
+            // border: 1px solid #232323;
+            font-size: inherit;
+            line-height: 1.625em;
+            text-transform: uppercase;
+            border-radius: 0 50px 50px 0;
+            margin-left: -4px;
+            margin-top:-4px;
+        }
+       input{
+          border-radius: 50px 0 0 50px;
+          width: 66.66666667%;
+          padding: 13px 26px;
+          border: 0;
+       }
+
+         
+      
+    }
+}
+#small{ 
+    position: relative;
+    background: #1e1e1e;
+    padding:  1.625em 0;
+    p{
+        color: gray
+    }
+    .smooth{
+       
+        .top-link{
+           
+            width: 3.25em;
+            height: 3.25em;
+            border-radius: 50%;
+            background: #3d3d3d;
+            display: inline-block;
+            text-align: center;
+            position: fixed;
+            z-index: 4;
+            bottom: 3.25em;
+            padding-top: 12px;
+            color: white;
+            bottom: 55px;
+            right: 25px
+          
+        }
+    }
+ 
+}
+  
