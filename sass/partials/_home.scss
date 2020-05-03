@@ -1,12 +1,12 @@
-*{
-    box-sizing: border-box;
-}
-#navigation{
-    
 
-    .navbar{
+#navigation{
+   
+  
+   
+
+ .navbar{
         top: 0px;
-        padding: 15px 0;
+        // padding: 15px 0;
         @include transition(all 0.4s);
         z-index: 1020;
         .navbar-brand{
@@ -17,12 +17,14 @@
         .navbar-nav {
              text-transform: uppercase;
              li{
+            
                 a{
                  font-family: $font-f;
                       font-size: 14px;
                       font-size: 10px;
                       font-weight: 400;
                       color: $text-color-white;
+                    
                  }
              }
         }
@@ -34,13 +36,98 @@
                 }
             }
         }
+
+
+
     
      }
- }
+
+
+ #bag{
+   
+        .mybag{
+            float: right;
+        }
+    
+        ul{
+            list-style-type: none;
+        }
+         .cart-title{
+            margin-bottom: 3.25em;
+            border-bottom: 1px solid #f1f1f1;
+        }
+         h5{
+            font-size: 2em;
+            line-height: 1.625em;
+            color: #343434;
+            font-weight: 600;
+            font-variant-ligatures: common-ligatures;
+        }
+         .cart-items{
+            max-height: 70vh;
+            overflow-x: auto;
+            overflow-y: scroll;
+            
+            line-height: 1.625em !important;
+        }
+         .item_image img {
+            height: 80px;
+        }
+         li{display: flex;
+             margin-bottom:1.625em;
+        }
+         li .item_image{
+           
+            margin-right: 1.625em;
+        }
+     
+         .item_remove::before{
+            margin-left: 15px;
+            content: '\2715';}
+         .cart-subtotal{
+            padding-top: 1.625em;
+            border-top: 1px solid #f1f1f1;
+        }
+         .cart-action{
+            margin-top: 3.25em;
+            text-align: center;
+            width: 100%;
+        }
+         .cart-action .btn-primary{
+            border-color: #425cbb;
+            background: #425cbb;}
+         .cart-close::before{
+            position: absolute;
+            top: 1em;
+            z-index: 99;
+            right: 1em;
+            cursor: pointer;
+            transition: 0.1s linear;
+            -webkit-transition: 0.1s linear;
+            -moz-transition: 0.1s linear;
+            opacity: .7;
+            font-size: 1em;
+            color: #fff;
+            line-height: 2.4375em;
+            content: '\2715';
+           
+            width: 2.4375em;
+            height: 2.4375em;
+            background: #232323;
+            text-align: center;
+            border-radius: 50%;
+        }
+    
+ 
+    }
+
+
+}
+
 #intro{
-     margin-top: -80px;
+     margin-top: -100px;
     position: relative;
-    // padding: 150px 0;
+    padding: 80px 0;
     background: url(../img/hero1.jpg);
     background-repeat: no-repeat;
     z-index: 0;
@@ -61,31 +148,47 @@
     
 
     .intro-logo{
-        padding-top: 200px;
-        margin-left: 155px;
+        padding-top: 20px;
+        margin-left: 30px;
         img{
             max-height: 8.125em;
             z-index: 10;
         }
     }
     .intro-text{
-        padding-top: 200px;
+      
         p{
-            font-weight: 400;
+          
           z-index: 10;
           color: $text-color-white;
-          position: relative;
-          top: 48px;
+         margin-right: 0px;
+         margin-bottom: 0px;
           font-size: 1.4375em;
           line-height: 1.69565217em;
           opacity: .9;
         }
     }
     .my-btn{
+        background: #425cbb;
         text-align: center;
         width: 24%;
+        border-color: #425cbb;
         color: $text-color-white;
-       @extend %btn-shared;
+        border-width: 2px;
+        font-size: inherit;
+        line-height: 1.625em;
+        text-transform: uppercase;
+        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 100px;
+    padding-top: 0.54166667em;
+    padding-bottom: 0.65em;
+    padding-right: 3.25em;
+    padding-left: 3.25em;
+         cursor: pointer;
+       
     }
 
     .myicons{  
@@ -97,6 +200,7 @@
             list-style-type: none;
             li{
              margin: 30px;
+         
              a{
                  text-decoration: none;
                  color: #a59f9f;
@@ -141,10 +245,13 @@
         }
     }
     .filterDiv{
+        transform: translate3d(0, 10px, 0);
         display: none;
+        
     } 
     .show {
         display: block;
+        transition: .3s;
       } 
       .btn {
         cursor: pointer;
@@ -156,7 +263,8 @@
         position: relative;
         padding: 0;
         overflow: hidden;
-      
+      background-size: cover;
+      height: 50%;
   
         .overlay{
        
@@ -169,9 +277,12 @@
             transition: .5s ease;
             opacity:0;
             color: white;
-            font-size: 20px;
-            padding: 160px;
+            font-size: 12px;
+            padding: 100px;
             text-align: top;
+            height: 100%;
+          
+         
               
         }
 
@@ -195,7 +306,7 @@
     position: relative;
 
 
-       .overlay{
+       .coverlay{
            top: 0;
         position: absolute;
         bottom: 0;
@@ -237,7 +348,7 @@
           }
        }
 
-       &:hover .overlay{
+       &:hover .coverlay{
             opacity: 1;
        }
        &:hover .social{
@@ -280,7 +391,7 @@
        
     }
 
-    .overlay{
+    .parallax-overlay{
         &::before{
             position: absolute;
             content: '';
@@ -290,7 +401,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            opacity: 0.7;
+            opacity: 0.5;
             background-attachment: fixed;
             background-size: cover;
         }
@@ -332,7 +443,7 @@
 
  #gibson{
    position: relative;
-     padding: 110px 0;
+     padding: 80px 0;
      background-color: #f4f4f4;
      .dan{
           img{
@@ -355,7 +466,7 @@
     }
  }
 
-     #news{ 
+ #news{ 
      background-color: #f4f4f4;
 
     padding: 100px 0;
@@ -403,25 +514,26 @@
    
 #karusel{
 padding: 100px 0;
-background: #f4f4f4;
-   
+background: #e7e7e7;
+   ul{
+       list-style-type: none;
+       li{
+           img{
+               color: #767676;
+            max-height: 1.625em;
+            opacity: .3;
+            margin: 0;
+            max-width: 45%;
+           }
+ 
+       }
+   }
     .brands{
         margin-top: 50px;
-        .item{
-            .brand-box{
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                padding: 10px;
-                img{
-                    padding: 20px;
-                    filter: brightness(100%) invert(1);
-                    max-height: 1.625em;
-                  
-                    max-height: 1.625em;
-                }
-            }
+
         }
     }
-}
+
 #interested{
     padding: 70px 0;
     background-color: #425cbb;
@@ -441,8 +553,7 @@ background: #f4f4f4;
     }
 }
 
-
-    #big{
+ #big{
         padding: 100px 0;
         background-color: #232323;
         color: white;
@@ -519,7 +630,7 @@ line-height: 2.6em;
         }
     }
 
-    #small{ 
+ #small{ 
         position: relative;
         background: #1e1e1e;
         padding:  1.625em 0;
@@ -546,6 +657,5 @@ line-height: 2.6em;
               
             }
         }
-     
     }
-      
+    

@@ -1,9 +1,6 @@
-body{
-    padding: 0;
-    margin: 0;
-}
 
-#about-navigation{
+
+#contact-navigation{
   
     
 
@@ -47,11 +44,11 @@ body{
      
    
 }
-#about-intro{
-    padding: 200px 0;
+#contact-intro{
+    padding: 100px 0;
     position: relative;
-    z-index: -3;
-    background-image: url(../img/about-bg/hero5.jpg);
+    z-index: 1;
+    background-image: url(../img/hero16.jpg);
 background-size: cover;
 
 
@@ -74,8 +71,7 @@ background-size: cover;
             h3{
            @include title;
            color: white;
-                
-             
+                     
          
             }
             p{
@@ -86,88 +82,84 @@ background-size: cover;
         }
     
 }
-
-#cards{
-   
-    padding: 100px 0;
-    background-color: #F4F4F4;
-    .cards{
-
-        .mycard{
-            &::before{
-                content: " ";
-                display: table;
-            }
-            .card-logo{
-                background: #eeeaea;
-    padding: 4.875em 0;
-    text-align: center;
-             img{
-                 height: 50px;
-             }
-            }
-            .card-text{
-                position: relative;
-    overflow: hidden;
-    padding: 2.4375em;  
-    background: #fff;
-    
-            }
-        }
+#drop{
+    .col-lg-4{
+        padding: 0;
+        width: 100%;
     }
-
-
+    .box{
+        max-height: 100vh;
+        h4{
+            font-size: 35px;
+        }
+        margin: 0;
+    padding: 6.5em 0;
+    min-height: 434px;
+    img{
+        height: 60px;
+    }
+    i{
+        font-size: 60px;
+    }
+    }
+  
+    .connect{
+i {
+    color: white;
 }
-#biznes{
-    position: relative;
-    z-index: 1;
-    padding-top: 100px 0;
-    // margin-top: 0;
-.biznes-text{
-    position: relative;
-    z-index: 3;
-    h4{
-        
+h4{
+    color: white;
+}
+p{
+    color: white;
+    a{
         color: white;
     }
-    a{
-        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
-        transition: 0.1s linear;
-        -webkit-transition: 0.1s linear;
-        -moz-transition: 0.1s linear;
-        border-radius: 100px;
-        padding-top: 0.54166667em;
-        padding-bottom: 0.65em;
-        padding-right: 3.25em;
-        padding-left: 3.25em;
-        // border: 1px solid #232323;
-        border-width: 2px;
-        font-size: inherit;
-        line-height: 1.625em;
-        text-transform: uppercase;
+}
     }
 }
-
-    background-attachment: fixed;
-    transform: translate3d(0px, 95.72px, 0px);
+#reach{
+    margin-top: -25px;
     padding: 100px 0;
-    background-position: 50% 50% !important;
-    background-image: url(../img/about-bg/hero8.jpg);
-    background-size: cover;
-&::before{
-    position: absolute;
-    content: '';
-    background: #232323;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    opacity: 0.3;
-}
-    
+    background-color: #f4f4f4;
+    .with-icon{
         
+        img{
+            height: 25px;
+            position: absolute;
+            z-index: 3;
+            left: 31px;
+            top: 31px;
+        // bottom: 10px;
+
+        }
+        .mailimg{
+            top: 62px;
+        }
+        input{
+            padding-left: 4.0625em;
+            padding: 13px 26px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            padding-left: 4em;
+            margin-top: 20px;
+            position: relative;
+
+
+        }
        
+    }
+    textarea{
+        border-radius: 5px;
+        width: 100%;
+        border: none;
+    }
+    button{padding:10px 38px 12px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #425cbb;
+    }
 
 }
 
@@ -276,4 +268,3 @@ color: white;
     }
  
 }
-  

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/9c4917b6fe.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -13,6 +15,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="sass/style.css">
 </head>
 
@@ -23,7 +28,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""
+                            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt=""
                                     style="max-height: 40px;"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,54 +38,155 @@
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home <span
+                                                class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="contact.html">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Shop Card</a>
+                                        <a class="nav-link" href="shopcard.html">Shop Card</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Login</a>
+                                        <a class="nav-link" href="login.html">Login</a>
                                     </li>
                                 </ul>
-                                <form class="form-inline my-2 my-lg-0">
-                                    <a href="" class="mr-5">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="">
-                                        <i class="fas fa-shopping-bag"></i>
-                                    </a>
-                                </form>
+                                <section id="search">
+                                    <div id="myNav" class="overlaysearch">
+                                        <a href="javascript:void(0)" class="closebtnsearch"
+                                            onclick="closeNav()">&times;</a>
+                                        <div class="overlaysearch-content">
+                                            <div class="container">
+                                                <input type="text" placeholder="Type your search and hit enter">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        function openNav() {
+                                            document.getElementById("myNav").style.height = "100%";
+
+                                        }
+
+                                        function closeNav() {
+                                            document.getElementById("myNav").style.height = "0%";
+                                        }
+                                    </script>
+                                </section>
+
+                                <section id="bag" class="mt-5">
+                                    <div class="container mybag">
+                                        <div class="row">
+                                            <div class="col-lg-9"></div>
+                                            <div class="col-lg-3 w3-sidebar w3-bar-block w3-card w3-animate-right"
+                                                style="display:none;right:0; width: 100%;top: 0;" id="rightMenu">
+                                                <div class="cart-title">
+                                                    <h5>Your Cart</h5>
+                                                </div>
+                                                <ul class="cart-items">
+                                                    <li>
+                                                        <div class="item_image">
+                                                            <a href="#">
+                                                                <img alt="product" src="img/product-small-1.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="item_detail">
+                                                            <span>Dave Wool Beanie</span><br>
+                                                            <span class="h6">1 x $39.00</span>
+                                                        </div>
+                                                        <div class="item_remove" title="Remove From Cart"></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item_image">
+                                                            <a href="#">
+                                                                <img alt="product" src="img/product-small-2.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="item_detail">
+                                                            <span>Rose Tinted Glasses</span><br>
+                                                            <span class="h6">1 x $89.00</span>
+                                                        </div>
+                                                        <div class="item_remove" title="Remove From Cart"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="cart-subtotal ml-5">
+                                                    <h5>Subtotal:</h5>
+                                                    <span>$128.00</span>
+                                                </div>
+                                                <div class="cart-action">
+                                                    <a href="#" class="btn btn-square btn-primary">
+                                                        <span class="btn_text">
+                                                            Checkout Now
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="cart-close" onclick="closeRightMenu()">
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+
+                                                <button class="d-inline" onclick="openNav()"
+                                                    style="background: transparent; border: 0; color: white;">
+                                                    <a style="color:white;cursor:pointer"> <i
+                                                            class="fas fa-search"></i></a>
+                                                </button>
+                                                <button class=" d-inline" onclick="openRightMenu()"
+                                                    style="background: transparent; border: 0; color: white;">
+                                                    <a href="" class="mr-5" onclick="openRightMenu()"
+                                                        style="background: transparent; border: 0; color: white;">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </a>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        function openRightMenu() {
+                                            document.getElementById("rightMenu").style.display = "block";
+                                        }
+
+                                        function closeRightMenu() {
+                                            document.getElementById("rightMenu").style.display = "none";
+                                        }
+                                    </script>
+                                </section>
+
                             </div>
                         </nav>
                     </div>
                 </div>
             </div>
 
+
         </section>
+
     </header>
     <main>
         <!-- intro section start -->
         <section id="intro">
-            <div class="container fluid">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-4 offset-lg-2">
                         <div class="intro-logo">
                             <img src="img/logo.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="intro-text mr-5">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-end">
+                        <div class="intro-text">
                             <p>A beautiful collection<br> of
                                 hand-crafted web components</p>
                         </div>
+
                     </div>
+
+
+
+
                 </div>
                 <div class="row mt-5">
                     <div class="col-lg-12 d-flex justify-content-center">
@@ -256,7 +362,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-4 person">
                         <img src="img/avatar-team-5.jpg" alt="" class="img-fluid">
-                        <div class="overlay">
+                        <div class="coverlay">
                             <h6>DESIGNER</h6>
                             <h5>Isabelle Pearce</h5>
 
@@ -286,7 +392,7 @@
                     </div>
                     <div class="col-lg-4 person">
                         <img src="img/avatar-team-4.jpg" alt="" class="img-fluid">
-                        <div class="overlay">
+                        <div class="coverlay">
                             <h6>DEVELOPER</h6>
                             <h5>Sarah Inkerman</h5>
                         </div>
@@ -315,7 +421,7 @@
                     </div>
                     <div class="col-lg-4 person">
                         <img src="img/avatar-team-6.jpg" alt="" class="img-fluid">
-                        <div class="overlay">
+                        <div class="coverlay">
                             <h6>DESIGNER</h6>
                             <h5>Marcus Smith</h5>
                         </div>
@@ -400,7 +506,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="overlay"></div>
+                <div class="parallax-overlay"></div>
             </div>
         </section>
         <!-- parallax section end  -->
@@ -569,45 +675,61 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
+                        <ul>
+                            <div id="brand-slider" class="brands owl-carousel owl-theme">
 
-                        <div id="brand-slider" class="brands owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand1.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand2.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand3.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand4.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand5.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand6.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="brand-box">
-                                    <img src="img/brands/brand7.png" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand1.png" alt="" srcset="">
 
+                                    </li>
+
+                                </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand2.png" alt="" srcset="">
+
+                                    </li>
+
+                                </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand3.png" alt="" srcset="">
+
+                                    </li>
+
+                                </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand4.png" alt="" srcset="">
+
+                                    </li>
+
+                                </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand5.png" alt="" srcset="">
+
+                                    </li>
+
+                                </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand6.png" alt="" srcset="">
+
+                                    </li>
+
+                                </div>
+                                <div class="item">
+                                    <li>
+                                        <img src="img/brands/brand7.png" alt="" srcset="">
+
+                                    </li>
+
+                                </div>
+
+                            </div>
+                        </ul>
 
 
                     </div>
@@ -634,9 +756,6 @@
             </div>
         </section>
         <!-- interested section end  -->
-
-
-
     </main>
     <footer>
         <!-- big section start  -->
@@ -748,14 +867,7 @@
                 </div>
             </div>
         </section>
-
-
     </footer>
-
-
-
-
-
 
 
 
@@ -763,6 +875,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/about.js"></script>
     <script src="js/main.js"></script>
 </body>
 
